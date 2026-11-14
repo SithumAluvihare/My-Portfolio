@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sithum Aluvihare | Electrical &amp; Information Engineering</title>
+  <meta name="description" content="Portfolio of Sithum Aluvihare, Electrical and Information Engineering undergraduate at the University of Ruhuna: custom PCBs, FPGA design, embedded firmware, multi-drone control, IoT, telecommunications and software.">
+
+  <!-- Link preview (LinkedIn, WhatsApp, etc.). Add assets/images/og-cover.jpg (1200x630) before publishing. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sithum Aluvihare | Electrical &amp; Information Engineering">
+  <meta property="og:description" content="Custom PCBs, FPGA design, embedded firmware, multi-drone control, IoT and software. University of Ruhuna, Sri Lanka.">
+  <meta property="og:url" content="https://sithumaluvihare.github.io/My-Portfolio/">
+  <meta property="og:image" content="https://sithumaluvihare.github.io/My-Portfolio/assets/images/og-cover.jpg">
+  <meta name="theme-color" content="#05080a">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-chip">SA</span>
+        <span class="brand-name">Sithum Aluvihare</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="menu" id="menu" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#domains">Domains</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#beyond">Beyond</a>
+        <a class="menu-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas id="pcb" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy" id="heroCopy">
+          <p class="eyebrow"><span class="led"></span>Electrical &amp; Information Engineering Undergraduate</p>
+
+          <h1 class="hero-name">
+            <span class="line"><span>Sithum</span></span>
+            <span class="line outline"><span>Aluvihare</span></span>
+          </h1>
+
+          <!-- The rotating words live in js/main.js (ROLES). The first one must match the text here. -->
+          <p class="hero-role" aria-label="I work on embedded and IoT systems, custom PCB design, FPGA and digital design, multi-drone control and full-stack web apps">
+            <span class="prompt">&gt;</span> I work on <span id="typed">embedded &amp; IoT systems</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-lead">
+            Undergraduate at the University of Ruhuna and trainee telecommunications engineer at
+            Sri Lanka Telecom. I build custom PCBs, FPGA designs and embedded firmware, including
+            a system that flies five quadcopters in formation.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">See my projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <dl class="readouts">
+            <div><dt>Base</dt><dd>Kandy, Sri Lanka</dd></div>
+            <div><dt>Focus</dt><dd>Electronics · Embedded · Telecom</dd></div>
+            <div><dt>Now</dt><dd>Trainee Engineer, Sri Lanka Telecom</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual">
+          <div class="chip" id="heroChip">
+            <span class="chip-notch" aria-hidden="true"></span>
+            <div class="slot" data-src="assets/images/profile" data-label="Your portrait" data-hint="Portrait, 4:5"></div>
+            <div class="chip-label" aria-hidden="true"><span>U1</span><span>SA-2026</span></div>
+          </div>
+          <span class="pin-tag pin-tag-a" aria-hidden="true">VCC</span>
+          <span class="pin-tag pin-tag-b" aria-hidden="true">TX</span>
+          <span class="pin-tag pin-tag-c" aria-hidden="true">RX</span>
+          <span class="pin-tag pin-tag-d" aria-hidden="true">GND</span>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span>Scroll</a>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Custom PCB Design</span><i></i><span>Embedded Firmware</span><i></i><span>FPGA</span><i></i><span>Multi-Drone Control</span><i></i><span>IoT</span><i></i><span>Telecommunications</span><i></i><span>PID Control</span><i></i><span>Power Systems</span><i></i><span>Instrumentation</span><i></i><span>Full-Stack Web</span><i></i>
+        <span>Custom PCB Design</span><i></i><span>Embedded Firmware</span><i></i><span>FPGA</span><i></i><span>Multi-Drone Control</span><i></i><span>IoT</span><i></i><span>Telecommunications</span><i></i><span>PID Control</span><i></i><span>Power Systems</span><i></i><span>Instrumentation</span><i></i><span>Full-Stack Web</span><i></i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-media" data-reveal>
+          <div class="frame">
+            <div class="slot" data-src="assets/images/about" data-label="You at work" data-hint="Lab, bench or site photo"></div>
+          </div>
+          <div class="frame frame-small">
+            <div class="slot" data-src="assets/images/about-2" data-label="Second photo" data-hint="Square"></div>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow" data-scramble data-reveal>01 / About</p>
+          <h2 data-reveal>An engineer who likes to see the whole system work.</h2>
+
+          <p data-reveal style="--d:.08s">
+            I'm Sithum, an Electrical and Information Engineering undergraduate at the University of
+            Ruhuna, from Kandy, Sri Lanka. My foundation is in digital design, embedded systems and
+            software development, and I'm most at home with Verilog, FPGA-based design and custom PCBs.
+          </p>
+          <p data-reveal style="--d:.14s">
+            My projects run from multi-UAV control and real-time telemetry to IoT platforms and
+            embedded firmware. I trained at the National Water Supply and Drainage Board's Kandy South
+            Water Treatment Plant, and I'm now a trainee telecommunications engineer at Sri Lanka
+            Telecom. Away from the bench I play rated chess and swim competitively.
+          </p>
+
+          <div class="stats" data-reveal style="--d:.2s">
+            <div class="stat"><b><span data-count="9">0</span></b><span>Projects built</span></div>
+            <div class="stat"><b><span data-count="5">0</span></b><span>Quadcopters flown in formation</span></div>
+            <div class="stat"><b><span data-count="2">0</span></b><span>Industry placements</span></div>
+            <div class="stat"><b><span data-count="2027">0</span></b><span>Graduating</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOMAINS: SIGNAL CHAIN (scroll-driven) ============ -->
+    <section class="chain" id="domains">
+      <div class="chain-sticky">
+        <div class="wrap chain-grid">
+          <div class="chain-copy">
+            <p class="eyebrow" data-scramble>02 / What I do</p>
+            <h2>From the wall socket to the cloud.</h2>
+            <p class="chain-sub">Keep scrolling to follow one signal through every layer I work on.</p>
+
+            <ol class="stages" id="stages">
+              <li class="stage is-active" style="--c:#ffb454">
+                <span class="stage-no">01</span>
+                <div>
+                  <h3><button type="button">Electrical</button></h3>
+                  <div class="stage-body"><div>
+                    <p>Everything starts with power. Power systems, energy auditing and industrial instrumentation, with plant training at a live water treatment works.</p>
+                    <ul class="chips"><li>ETAP</li><li>DIALux</li><li>Energy auditing</li><li>Instrumentation</li></ul>
+                  </div></div>
+                </div>
+              </li>
+              <li class="stage" style="--c:#3dffa2">
+                <span class="stage-no">02</span>
+                <div>
+                  <h3><button type="button">Electronics</button><em>core</em></h3>
+                  <div class="stage-body"><div>
+                    <p>Where I spend most of my time. Custom PCBs, FPGA designs and embedded firmware, from micro quadcopters to a self-balancing robot.</p>
+                    <ul class="chips"><li>Custom PCB design</li><li>ESP32</li><li>FPGA / Verilog</li><li>PID control</li><li>Firmware</li></ul>
+                  </div></div>
+                </div>
+              </li>
+              <li class="stage" style="--c:#c792ff">
+                <span class="stage-no">03</span>
+                <div>
+                  <h3><button type="button">Telecommunication</button></h3>
+                  <div class="stage-body"><div>
+                    <p>Getting the signal across. A low-latency wireless telemetry network for a five-drone fleet, and now training at Sri Lanka Telecom.</p>
+                    <ul class="chips"><li>Wireless telemetry</li><li>Wi-Fi · Bluetooth · GSM</li><li>Sri Lanka Telecom trainee</li></ul>
+                  </div></div>
+                </div>
+              </li>
+              <li class="stage" style="--c:#ff7a90">
+                <span class="stage-no">04</span>
+                <div>
+                  <h3><button type="button">Software</button></h3>
+                  <div class="stage-body"><div>
+                    <p>Turning signals into bits and bits into behaviour. Firmware in C and C++, applications in C# and Java, and full-stack web apps on the MERN stack.</p>
+                    <ul class="chips"><li>C / C++</li><li>C# · Java</li><li>MERN stack</li><li>Data structures</li></ul>
+                  </div></div>
+                </div>
+              </li>
+              <li class="stage" style="--c:#4cc9ff">
+                <span class="stage-no">05</span>
+                <div>
+                  <h3><button type="button">Networking</button></h3>
+                  <div class="stage-body"><div>
+                    <p>Bits become packets. MQTT and cloud-connected IoT devices, plus network design in Cisco Packet Tracer.</p>
+                    <ul class="chips"><li>MQTT</li><li>IoT platforms</li><li>Cisco Packet Tracer</li><li>Cloud logging</li></ul>
+                  </div></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="scope" aria-hidden="true">
+            <div class="scope-top">
+              <span class="scope-ch">CH1</span>
+              <span class="scope-name" id="scopeName">ELECTRICAL</span>
+              <span class="scope-val" id="scopeVal">230 V · 50 Hz</span>
+            </div>
+            <div class="scope-screen"><canvas id="scope"></canvas></div>
+            <div class="scope-bottom">
+              <div class="scope-steps" id="scopeSteps"><i></i><i></i><i></i><i></i><i></i></div>
+              <span id="scopeDiv">5 ms/div</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow" data-scramble data-reveal>03 / Skills</p>
+          <h2 data-reveal>The toolbox.</h2>
+          <p class="section-sub" data-reveal style="--d:.08s">Grouped by domain.</p>
+        </header>
+
+        <div class="ic-grid">
+          <article class="ic" data-reveal style="--c:#3dffa2">
+            <span class="ic-ref">U2</span>
+            <h3>Electronics &amp; Embedded</h3>
+            <ul class="chips"><li>Custom PCB design</li><li>ESP32 / ESP32-S3</li><li>NodeMCU</li><li>Embedded firmware</li><li>PID control &amp; tuning</li><li>IMU &amp; sensor integration</li><li>Atmel Studio</li></ul>
+          </article>
+          <article class="ic" data-reveal style="--c:#e0a458;--d:.06s">
+            <span class="ic-ref">U3</span>
+            <h3>Digital Design &amp; FPGA</h3>
+            <ul class="chips"><li>Verilog</li><li>SystemVerilog</li><li>AMD Vivado</li><li>FPGA (Xilinx / Intel)</li><li>FSM design</li><li>Nexys A7</li></ul>
+          </article>
+          <article class="ic" data-reveal style="--c:#c792ff;--d:.12s">
+            <span class="ic-ref">U4</span>
+            <h3>Telecom &amp; Networking</h3>
+            <ul class="chips"><li>Wireless telemetry</li><li>Wi-Fi</li><li>Bluetooth</li><li>GSM</li><li>MQTT</li><li>Cisco Packet Tracer</li></ul>
+          </article>
+          <article class="ic" data-reveal style="--c:#4cc9ff">
+            <span class="ic-ref">U5</span>
+            <h3>Design &amp; Simulation Tools</h3>
+            <ul class="chips"><li>KiCad</li><li>Altium Designer</li><li>Proteus</li><li>MATLAB</li><li>AutoCAD</li></ul>
+          </article>
+          <article class="ic" data-reveal style="--c:#ff7a90;--d:.06s">
+            <span class="ic-ref">U6</span>
+            <h3>Software Development</h3>
+            <ul class="chips"><li>C</li><li>C++</li><li>C#</li><li>Java</li><li>MongoDB</li><li>Express.js</li><li>React</li><li>Node.js</li><li>Machine learning</li><li>Computer vision</li></ul>
+          </article>
+          <article class="ic" data-reveal style="--c:#ffb454;--d:.12s">
+            <span class="ic-ref">U7</span>
+            <h3>Electrical</h3>
+            <ul class="chips"><li>ETAP</li><li>DIALux</li><li>Energy auditing</li><li>Load calculation</li><li>Industrial instrumentation</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow" data-scramble data-reveal>04 / Projects</p>
+          <h2 data-reveal>Things I've built.</h2>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter projects" data-reveal>
+          <button type="button" class="is-active" data-filter="all">All</button>
+          <button type="button" data-filter="electronics">Electronics</button>
+          <button type="button" data-filter="telecom">Telecom</button>
+          <button type="button" data-filter="networking">Networking</button>
+          <button type="button" data-filter="software">Software</button>
+          <button type="button" data-filter="electrical">Electrical</button>
+        </div>
+
+        <!-- Each <article> is one project. data-cat can list several filters, separated by spaces.
+             Image: drop a file named like data-src (jpg, jpeg, png or webp) into assets/images/ -->
+        <div class="project-grid" id="projectGrid">
+
+          <article class="project project-wide" data-cat="electronics telecom" data-reveal>
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-1" data-label="AeroSync 5 photo" data-hint="Landscape, 16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#3dffa2">Electronics · Telemetry · Featured</p>
+                <h3>AeroSync 5: Multi-Drone Synchronization System</h3>
+                <p>A ground-controlled system for real-time synchronized flight of five quadcopters. I built a centralized Ground Control Station for multi-drone command, an ESP32-based low-latency telemetry network, and formation control for line, V-shape and circular flight patterns.</p>
+                <ul class="chips"><li>ESP32</li><li>CC3D Revo Mini</li><li>Distributed control</li><li>Wireless telemetry</li><li>Formation control</li></ul>
+                <div class="project-links"><a href="https://lnkd.in/p/g_R-jmfq" target="_blank" rel="noopener">LinkedIn post</a></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-cat="electronics" data-reveal>
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-2" data-label="Crazyflie rebuild photo" data-hint="16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#3dffa2">Electronics</p>
+                <h3>Crazyflie Nano Quadcopter: Custom Rebuild &amp; Firmware</h3>
+                <p>Rebuilt the Bitcraze Crazyflie micro quadcopter on a custom PCB with an ESP32-S3 and MPU6050 IMU, wrote firmware to use the ESP32's Wi-Fi, and tuned the PID loops through systematic flight testing.</p>
+                <ul class="chips"><li>ESP32-S3</li><li>MPU6050</li><li>Custom PCB</li><li>PID tuning</li></ul>
+                <div class="project-links"><a href="https://www.linkedin.com/posts/sithum-aluvihare-5b45b8360_drones-embeddedsystems-esp32-activity-7410026255674179584-bzGR" target="_blank" rel="noopener">LinkedIn post</a></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-cat="electronics" data-reveal style="--d:.06s">
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-3" data-label="FPGA board photo" data-hint="16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#e0a458">Digital design · FPGA</p>
+                <h3>FPGA Reaction Time Tester</h3>
+                <p>A reaction-time measurement system on a Nexys A7-100T in SystemVerilog: an FSM controller, an LFSR random delay to prevent anticipation, a 1 ms tick from the 100 MHz clock, and false-start and overflow detection on a multiplexed 7-segment display.</p>
+                <ul class="chips"><li>SystemVerilog</li><li>FSM design</li><li>LFSR</li><li>Nexys A7</li></ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-cat="electronics" data-reveal style="--d:.12s">
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-4" data-label="Robot photo" data-hint="16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#3dffa2">Electronics · Control</p>
+                <h3>Two-Wheel Self-Balancing Robot</h3>
+                <p>A self-balancing robot using an MPU6050 IMU, a Kalman filter and a tuned PID controller. Bluetooth gives live parameter logging, and a separate circuit allows manual PID tuning.</p>
+                <ul class="chips"><li>C++</li><li>Kalman filter</li><li>PID control</li><li>Bluetooth</li></ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-cat="electronics networking" data-reveal>
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-5" data-label="Water monitoring photo" data-hint="16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#4cc9ff">IoT · Networking</p>
+                <h3>Water Turbidity &amp; Level Monitoring Systems</h3>
+                <p>Two NodeMCU-based IoT systems for water monitoring: a web platform tracking reservoir levels, flow rates and water quality in real time, and a portable turbidity meter that logs readings to a Google Sheet over Wi-Fi.</p>
+                <ul class="chips"><li>NodeMCU</li><li>IoT</li><li>Web platform</li><li>Google Sheets API</li></ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-cat="electronics networking telecom" data-reveal style="--d:.06s">
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-6" data-label="Wearable photo" data-hint="16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#4cc9ff">IoT · Healthcare</p>
+                <h3>Health and Posture Monitoring System</h3>
+                <p>A wearable for elderly people living alone. An IMU tracks posture and detects falls, a pulse oximeter monitors heart rate and SpO2, and data goes over MQTT to the cloud and an Android app, with GSM SMS alerts.</p>
+                <ul class="chips"><li>ESP32</li><li>MQTT</li><li>GSM</li><li>Pulse oximeter</li><li>Android app</li></ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-cat="software" data-reveal style="--d:.12s">
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-7" data-label="SkillShare screenshot" data-hint="16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#ff7a90">Software · Full stack</p>
+                <h3>SkillShare: Learning Management Website</h3>
+                <p>A full-stack learning management system on the MERN stack with secure authentication, course management, student enrolment and real-time progress tracking.</p>
+                <ul class="chips"><li>MongoDB</li><li>Express.js</li><li>React</li><li>Node.js</li></ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-cat="electrical" data-reveal>
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-8" data-label="Energy audit chart or photo" data-hint="16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#ffb454">Electrical</p>
+                <h3>Preliminary Energy Audit, University of Ruhuna</h3>
+                <p>Audited the 1 to 5 kW electrical loads of the EIE Department across lab equipment and network servers, analysed consumption by floor and lab, found servers and cooling to be the dominant loads, and proposed efficiency improvements.</p>
+                <ul class="chips"><li>Energy auditing</li><li>Load calculation</li><li>Data analysis</li></ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-cat="software" data-reveal style="--d:.06s">
+            <div class="project-inner tilt">
+              <div class="project-media"><div class="slot" data-src="assets/images/project-9" data-label="App screenshot" data-hint="16:10"></div></div>
+              <div class="project-body">
+                <p class="project-tag" style="--c:#ff7a90">Software</p>
+                <h3>DSA Hospital Management System</h3>
+                <p>A hospital management system in C# built around data structures and algorithms, as an exercise in algorithmic thinking and software design.</p>
+                <ul class="chips"><li>C#</li><li>Data structures</li><li>Algorithms</li></ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section journey" id="journey">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow" data-scramble data-reveal>05 / Journey</p>
+          <h2 data-reveal>Education &amp; experience.</h2>
+        </header>
+
+        <!-- Newest first. Copy or delete <li> blocks as needed. -->
+        <div class="timeline" id="timeline">
+          <span class="timeline-rail" aria-hidden="true"><span id="timelineFill"></span></span>
+        <ol>
+
+          <li class="t-item" data-reveal>
+            <span class="t-via" aria-hidden="true"></span>
+            <p class="t-when">Sep 2026 — Present</p>
+            <div class="t-card">
+              <h3>Trainee Telecommunications Engineer</h3>
+              <p class="t-where">Sri Lanka Telecom · Colombo</p>
+              <!-- EDIT: add what you work on at SLT -->
+              <p>Industrial training in telecommunications engineering.</p>
+            </div>
+          </li>
+
+          <li class="t-item" data-reveal>
+            <span class="t-via" aria-hidden="true"></span>
+            <p class="t-when">Aug 2025 — Nov 2025</p>
+            <div class="t-card">
+              <h3>Trainee Electrical Engineer</h3>
+              <p class="t-where">National Water Supply and Drainage Board · Kandy South Water Treatment Plant</p>
+              <p>Practical exposure to industrial control, instrumentation and monitoring systems in a live plant, and contributed to analysis of plant operations.</p>
+            </div>
+          </li>
+
+          <li class="t-item" data-reveal>
+            <span class="t-via" aria-hidden="true"></span>
+            <p class="t-when">Jul 2023 — Dec 2027</p>
+            <div class="t-card">
+              <h3>BSc in Electrical and Information Engineering</h3>
+              <p class="t-where">University of Ruhuna</p>
+              <p>GPA 3.48. Digital design, embedded systems, power systems, software development and telecommunications. Member of the Institution of Engineers, Sri Lanka (IESL).</p>
+            </div>
+          </li>
+
+          <li class="t-item" data-reveal>
+            <span class="t-via" aria-hidden="true"></span>
+            <p class="t-when">Certifications</p>
+            <div class="t-card">
+              <h3>Machine learning &amp; computer vision</h3>
+              <p class="t-where">Online certifications</p>
+              <p>Machine Learning Pipelines · Build a computer vision app with Azure Cognitive Services.</p>
+            </div>
+          </li>
+
+          <li class="t-item" data-reveal>
+            <span class="t-via" aria-hidden="true"></span>
+            <p class="t-when">2008 — 2021</p>
+            <div class="t-card">
+              <h3>Primary and secondary education</h3>
+              <p class="t-where">Kingswood College, Kandy</p>
+              <p>A-Levels: Physics A, Chemistry A, Mathematics B. School colours for chess and swimming.</p>
+            </div>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEYOND ============ -->
+    <section class="section beyond" id="beyond">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow" data-scramble data-reveal>06 / Beyond the bench</p>
+          <h2 data-reveal>Chess, swimming and giving back.</h2>
+          <p class="section-sub" data-reveal style="--d:.08s">The board teaches patience and planning, the pool teaches discipline. Both carry over to engineering.</p>
+        </header>
+
+        <div class="facts">
+          <article class="fact" data-reveal style="--c:#3dffa2">
+            <p class="fact-kicker">Chess</p>
+            <h3>International-rated player</h3>
+            <p>Member of the University Chess Team. School colours for chess at Kingswood College.</p>
+          </article>
+          <article class="fact" data-reveal style="--c:#4cc9ff;--d:.06s">
+            <p class="fact-kicker">Swimming</p>
+            <h3>University Swimming Team</h3>
+            <p>Kingswood College A Squad swimmer from 2010 to 2018. School colours for swimming.</p>
+          </article>
+          <article class="fact" data-reveal style="--c:#ffb454;--d:.12s">
+            <p class="fact-kicker">Volunteering</p>
+            <h3>Mehewara Project</h3>
+            <p>Volunteered at A/L and O/L Mathematics seminars run by the Faculty of Engineering, University of Ruhuna.</p>
+          </article>
+          <article class="fact" data-reveal style="--c:#c792ff;--d:.18s">
+            <p class="fact-kicker">Professional</p>
+            <h3>IESL member</h3>
+            <p>Member of the Institution of Engineers, Sri Lanka.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- EDIT: captions under each tile. Images: assets/images/activity-1 ... activity-10 -->
+      <div class="reel" id="reel">
+        <div class="reel-row" data-dir="-1">
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-1" data-label="Chess tournament" data-hint="4:3"></div><figcaption>Chess · tournament</figcaption></figure>
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-2" data-label="University chess team" data-hint="4:3"></div><figcaption>Chess · university team</figcaption></figure>
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-3" data-label="Swimming meet" data-hint="4:3"></div><figcaption>Swimming · meet</figcaption></figure>
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-4" data-label="University swimming team" data-hint="4:3"></div><figcaption>Swimming · university team</figcaption></figure>
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-5" data-label="School colours" data-hint="4:3"></div><figcaption>School colours</figcaption></figure>
+        </div>
+        <div class="reel-row" data-dir="1">
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-6" data-label="Mehewara seminar" data-hint="4:3"></div><figcaption>Mehewara · seminar</figcaption></figure>
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-7" data-label="Drone flight test" data-hint="4:3"></div><figcaption>Flight testing</figcaption></figure>
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-8" data-label="In the lab" data-hint="4:3"></div><figcaption>In the lab</figcaption></figure>
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-9" data-label="Plant training" data-hint="4:3"></div><figcaption>Plant training</figcaption></figure>
+          <figure class="tile"><div class="slot" data-src="assets/images/activity-10" data-label="Anything else" data-hint="4:3"></div><figcaption>University life</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-inner">
+        <p class="eyebrow" data-scramble data-reveal>07 / Contact</p>
+        <h2 class="contact-title" data-reveal>Let's build<br><span class="outline">something.</span></h2>
+        <p class="section-sub" data-reveal style="--d:.08s">Open to internships, graduate roles, collaborations and good engineering conversations.</p>
+
+        <div class="contact-links" data-reveal style="--d:.14s">
+          <a class="btn btn-primary" href="mailto:sithumaluvihare21@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/sithum-aluvihare-5b45b8360/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- EDIT: add these when ready
+          <a class="btn btn-ghost" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="assets/cv.pdf">Download CV</a>
+          -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Sithum Aluvihare</span>
+      <span class="footer-mono">Designed on a breadboard, shipped on the web.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
